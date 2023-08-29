@@ -6,7 +6,8 @@ class MyWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('helllo')),
+      appBar: AppBar(title: const Text('helllo')),
+      body: const Text('Hello World'),
     );
   }
 }
