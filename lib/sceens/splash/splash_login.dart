@@ -1,4 +1,6 @@
 import 'package:employee_management/components/button_component.dart';
+import 'package:employee_management/themes/color_app.dart';
+import 'package:employee_management/themes/image_app.dart';
 import 'package:flutter/material.dart';
 
 class SplashLoginPage extends StatelessWidget {
@@ -12,11 +14,11 @@ class SplashLoginPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset('assets/images/logo.png'),
+            Image.asset(ImageApp.logo),
             ButtonCompo(
               ontap: () {},
               text: 'Sign In',
-              color: Color(0xFF73AB6B),
+              color: AppColor.primaryColor,
               colorText: Colors.white,
             ),
             SizedBox(
@@ -26,7 +28,7 @@ class SplashLoginPage extends StatelessWidget {
                 ontap: () {},
                 text: 'Sign Up',
                 color: Colors.white,
-                colorText: Color(0xFF73AB6B)),
+                colorText: AppColor.primaryColor),
           ],
         ),
       ),

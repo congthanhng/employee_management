@@ -1,3 +1,4 @@
+import 'package:employee_management/themes/color_app.dart';
 import 'package:flutter/material.dart';
 
 class ButtonCompo extends StatelessWidget {
@@ -21,7 +22,7 @@ class ButtonCompo extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(20),
         decoration: BoxDecoration(
-          border: Border.all(color: Color(0xFF73AB6B)),
+          border: Border.all(color: AppColor.primaryColor),
           borderRadius: BorderRadius.circular(6),
           color: color,
         ),

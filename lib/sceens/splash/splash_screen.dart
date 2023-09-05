@@ -1,6 +1,8 @@
 import 'dart:async';
 
 import 'package:employee_management/sceens/splash/splash_login.dart';
+import 'package:employee_management/themes/color_app.dart';
+import 'package:employee_management/themes/image_app.dart';
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 
@@ -28,14 +30,16 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Image.asset('assets/images/logo.png'),
+          Image.asset(ImageApp.logo),
+          SizedBox(height: 150),
           LinearPercentIndicator(
             animation: true,
             animationDuration: 1500,
             lineHeight: 6,
             percent: 1,
-            progressColor: Color(0xFF73AB6B),
+            progressColor: AppColor.primaryColor,
           ),
         ],
       ),
