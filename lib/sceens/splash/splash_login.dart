@@ -1,4 +1,6 @@
 import 'package:employee_management/components/button_component.dart';
+import 'package:employee_management/sceens/log/login_page.dart';
+import 'package:employee_management/sceens/log/register.dart';
 import 'package:employee_management/themes/color_app.dart';
 import 'package:employee_management/themes/image_app.dart';
 import 'package:flutter/material.dart';
@@ -16,7 +18,14 @@ class SplashLoginPage extends StatelessWidget {
           children: [
             Image.asset(ImageApp.logo),
             ButtonCompo(
-              ontap: () {},
+              ontap: () {
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(
+                    builder: (context) =>
+                        LoginPage(), // Trang mới sau khi chuyển
+                  ),
+                );
+              },
               text: 'Sign In',
               color: AppColor.primaryColor,
               colorText: Colors.white,
@@ -25,7 +34,14 @@ class SplashLoginPage extends StatelessWidget {
               height: 10,
             ),
             ButtonCompo(
-                ontap: () {},
+                ontap: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(
+                      builder: (context) =>
+                          RegisterPage(), // Trang mới sau khi chuyển
+                    ),
+                  );
+                },
                 text: 'Sign Up',
                 color: Colors.white,
                 colorText: AppColor.primaryColor),

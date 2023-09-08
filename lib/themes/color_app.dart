@@ -2,6 +2,8 @@ import 'dart:ui';
 
 class AppColor {
   static final primaryColor = getColorFromHex('#73AB6B');
+  static final colorChoose = getColorFromHex('F6F9F0');
+  static final colorOutContainer = getColorFromHex('#414042');
 }
 
 Color getColorFromHex(String hexColor) {
