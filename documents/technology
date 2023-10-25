@@ -1,0 +1,7 @@
+Employee Management
+ Design : https://www.figma.com/file/WXnE1Q9VVZKtuII4ItYO4f/Employee-Management-With-Cheking-in?type=design&node-id=165-209&mode=design&t=tbSkpX3MUiCrYmIG-0
+1. font : Roboto // font default
+2. model application: clean architecture
+3. state management: bloc pattern
+4. route : auto route
+6. connect api: dio
